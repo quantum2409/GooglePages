@@ -6,4 +6,4 @@ This is an attempt to **build a replica** of "Google search", "Google image sear
 
 ## Principle
 
-The pages **pass suitable queries** to suitable pages to work identically to the mentioned google pages. The **"feeling lucky"** button is an attractive feature on the main page which was made functional using the same principle mentioned above.
+The pages **pass suitable queries** to suitable URLs to work identically to the mentioned google pages. The **"feeling lucky"** button is an attractive feature on the main page which is made functional using this same principle.
