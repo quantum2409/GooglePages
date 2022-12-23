@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-size: 14px;
+                font-family: arial, sans-serif;
+            }
+            a{
+                text-decoration: none; 
+                color: black;
+            }
+            a:hover{
+                text-decoration: underline;
+                
+            }
+            div > input{
+                display: block; 
+                width: 120px; 
+                background-color:rgb(250, 250, 250); 
+                border-radius: 5px; 
+                border-color: rgb(240, 240, 240);
+                height: 30px; 
+                border-style:solid; 
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            div > input:hover {
+                cursor:pointer;
+                box-shadow: black ;
+                box-sizing: border-box;
+                border-color: rgb(220, 220, 220);
+            }
+            input[type="text"]{
+                display: flex; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-top: 20px; 
+                border-radius: 100px; 
+                width: 550px; 
+                height: 35px; 
+                padding-left: 20px; 
+                border: 1px rgb(211, 207, 207) solid;
+            }
+            input[type="text"]:focus{
+                outline: none;
+                border-width: 2px;
+            }
+            input[type="text"]:hover{
+                border-width: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: right; color: black; padding-top: 50px; padding-right: 100px;">
+            <a href="./advanced.html" style="margin-right: 20px; ">Advanced Search</a>
+            <a href="./index.html" >Back to Google search</a>
+        </div>
+        <div style="margin-top: 50px;">
+        <img src="./images/Google Images.png" width="500px" style="display:flex; margin-left: auto;margin-right: auto; ">
+        <form action="http://www.google.com/images" >
+            <input type="text" name="q" >    
+            <div>
+            <input type="submit" value="Search Images">
+        </div>
+    </div>
+    </body>

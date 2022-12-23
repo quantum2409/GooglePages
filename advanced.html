@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-size: 14px;
+                font-family: arial, sans-serif;
+            }
+            a{
+                text-align: right; 
+                margin-top: 10px; 
+                padding-right: 10px; 
+                padding-top: 5px; 
+                text-decoration: none; 
+                color: black; 
+                margin-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            input[type="text"]{
+                
+                border-radius: 1px;
+                border: 1px solid rgb(225, 225, 225);
+                border-top: 1px solid rgb(200, 200, 200);
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+            }
+            input[type="text"]:focus{
+                
+                outline-color: rgb(0, 157, 255) ;
+                outline-width: 1px;
+                outline-style: solid;    
+            }
+            .xyz{
+                font-size: 14px;
+                font-weight:100;
+                color: rgb(30, 30, 30);
+                padding-top: 7px;
+                
+            }
+            .xyz:hover{
+                cursor: default;
+            }
+            input[type="submit"]{
+                
+                background-color: rgb(0, 157, 255);
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                height: 25px; 
+                width: fit-content; 
+                border-radius: 2px; 
+                outline-color: rgb(0, 151, 245); 
+                border: none;
+            }
+            input[type="submit"]:hover{
+                background-color: rgb(0, 132, 255);
+            }
+            .klm{
+                font-size: 12px;
+                font-weight:100;
+                color: rgb(100, 100, 100);
+                padding-top: 7px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: grid; grid-template-columns: 125px auto 100px 175px; ">
+        <img src="./images/Google Homepage.jpg" width="125px" style="margin-top: 5px;">
+        <img src="">
+        <a href="./images.html" >Images</a>
+        <a href="./index.html" >Back to Google Search</a>
+    </div>
+        <div style="color: rgb(219, 36, 30);font-size: 20px;margin: 25px 35px; border-bottom-width: 5px; border-bottom-color: black;">
+        Advanced Search
+        </div>
+        <div style="border-bottom: 1px solid rgb(230, 230, 230) ;"></div>
+        <form action="https://www.google.com/search" style="display: grid; grid-template-columns: 200px auto auto; column-gap: 20px ; row-gap: 10px; margin-top: 30px; padding: 15px;">
+
+            <div style="font-size: 16px; margin-bottom: 15px;">Find pages with...</div>
+            <div style="margin-bottom: 15px;"></div>
+            <div style="font-size: 16px;margin-bottom: 15px; color: rgb(100, 100, 100); font-weight: bold; font-size: 14px;">To do this in the search box.</div>
+
+            <div class="xyz">all these words:</div>
+            <input type="text" name="as_q">
+            <div class="klm">Type the important words: tri-colour rat terrier</div>
+
+            <div class="xyz">this exact word or phrase:</div>
+            <input type="text" name="as_epq">
+            <div class="klm">Put exact words in quotes: "rat terrier"</div>
+
+            <div class="xyz">any of these words:</div>
+            <input type="text" name="as_oq">
+            <div class="klm">Type OR between all the words you want: miniature OR standard</div>
+
+            <div class="xyz">none of these words:</div>
+            <input type="text" name="as_eq">
+            <div class="klm">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+            
+            <div class="xyz">numbers ranging from:</div>
+            <div style="display: grid; grid-template-columns: auto auto auto;">
+            <input type="text" name="as_nlo"> 
+            <div style="text-align: center; font-size: 14px; font-weight:100; color: rgb(30, 30, 30); padding-top: 7px;">  to  </div>
+            <input type="text" name="as_nhi">
+            </div>
+            <div class="klm">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</div>
+            
+            <div></div>
+            <div style="display: grid; grid-template-columns: auto 110px;">
+                <div></div>
+            <input type="submit" value="Advanced search">
+        </div>
+            <div></div>
+        </form>
+
+    </body>
